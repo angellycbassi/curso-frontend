@@ -1,9 +1,10 @@
 @charset "UTF-8";
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     width: 80%;
     margin: auto;
+    margin-bottom: 60px;
 }
 
 h1 {
@@ -11,6 +12,7 @@ h1 {
     background-color: rgb(178, 178, 255);
     text-align: center;
     padding-top: 5px;
+    font-size: 46px;
 }
 
 #supernova {
@@ -18,21 +20,28 @@ h1 {
 }
 
 h2 {
-    margin-top: 40px;
     color: rgb(30, 30, 122);
     background-color: #ccc;
+    font-size: 36px;
     padding: 10px;
-    border-bottom: 2px solid rgb(30, 30, 122);
+    border-bottom: 3px solid;
+    margin-top: 40px;
+    margin-bottom: 12px;
 }
 
-.destaque {
+a {
     color: blue;
+    text-decoration: none;
 }
 
-.bold {
-    font-weight: bolder;
+a:hover {
+    text-decoration: underline;
+}
+
+ul {
+    padding-left: 0;
 }
 
 li {
-    margin-left: -25px;
+    list-style-position: inside;
 }
