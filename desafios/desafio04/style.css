@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {
+    background-color: cyan;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 190px;
+    font-size: 1.7em;
+    color: rgba(0, 0, 0, 0.707);
+}
+
+.lista {
+    background-color: white;
+    margin: auto;
+    padding: 16px 10px 16px 10px;
+    width: 400px;
+    height: 350px;
+    overflow: auto;
+}
+
+.contatos {
+    background-color: blue;
+    height: 90px;
+}
+
+h2 {
+    display: inline;
+}
+
+img {
+    border-radius: 50%;
+}
