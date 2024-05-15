@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0a0b14;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cabecalho {
+    background-color: black;
+    width: 900px;
+    height: 25px;
+    padding: 25px 20px;
+}
+
+.cabecalho-link {
+    color: white;
+    text-decoration: none;
+    padding: 0px 420px 0px 10px;
+    font-size: 25px;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list-item {
+    display: inline-block;
+}
+
+.menu-list-item__link {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu-list-item__link:hover {
+    background-color: blueviolet;
+    color: black;
+}
+
+main {
+    margin-top: 25px;
+}
+
+.main-tittle {
+    font-size: 45px;
+    text-align: center;
+}
+
+.cards-wrapper {
+    margin-top: 45px;
+    height: 390px;
+    width: 1000px;
+    display: flex;
+
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #20212d;
+    width: 350px;
+    margin: 0px 10px;
+    border-radius: 8px;
+    padding-bottom: 30px;
+}
+
+.card-content {
+    flex-grow: 1;
+    width: 250px;
+    padding-top: 5px;
+}
+
+.card-content__name {
+    padding-bottom: 10px;
+    border-bottom: 3px solid blueviolet;
+}
+
+.card-content__price {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+.card-content__list {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 5px 0 0;
+    list-style-position: inside;
+    color: blueviolet;
+}
+
+.card-content__list-item {
+    padding: 1px 0px;
+}
+
+.card-content__list-item p {
+    display: inline-block;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+.card-botton__link {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 1000;
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    background-color: blueviolet;
+    border-radius: 5px;
+    padding: 15px 100px;
+}
+
+.card-botton__link:hover {
+    background-color: white;
+}
