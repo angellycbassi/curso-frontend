@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+:root {
+    --f1: 'Roboto';
+    --f2: 'Viaoda Libre';
+
+    --cor1: #162028;
+    --cor2: #425564;
+    --cor3: #555;
+    --cor4: #003d52;
+    --cor5: #0b171f;
+    --cor6: #6f8597;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--f1);
+    width: min-content;
+    margin: 1em auto;
+}
+
+.header-top {
+    background-color: var(--cor1);
+    display: flex;
+    justify-content: space-between;
+    padding: .4em;
+}
+
+.header-logo {
+    font-family: var(--f2);
+    font-weight: 300;
+    color: white;
+    margin-left: 4em;
+}
+
+.header-top-menu {
+    padding-top: .8em;
+    margin-right: 1.5em;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+
+}
+
+.header-top-menu ul {
+    list-style-type: none;
+    display: flex;
+    gap: 2em;
+}
+
+.header-top-menu a {
+    text-decoration: none;
+    color: var(--cor2);
+    padding: .5em;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+}
+
+.header-top-menu a:hover {
+    background-color: #252f38;
+}
+
+.portifolio {
+    margin: 6em 0;
+    text-align: center;
+    color: var(--cor3);
+}
+
+.portifolio h1 {
+    font-family: var(--f2);
+    font-size: 2.5em;
+    font-weight: normal;
+    margin-bottom: .8em;
+}
+
+.portifolio p {
+    width: 50em;
+    line-height: 2em;
+    margin: auto;
+}
+
+.models {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin-bottom: 4em;
+}
+
+.models-card {
+    height: 18em;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    color: var(--cor3);
+}
+
+.models-name {
+    letter-spacing: .2em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: .95em;
+}
+
+.sobre {
+    background: var(--cor4) url(imagens/bg_detalhe.png) no-repeat right bottom;
+
+    padding: 8em 6em;
+    color: white;
+}
+
+.sobre h2 {
+    font-family: var(--f2);
+    font-size: 3em;
+    font-weight: normal;
+    text-transform: uppercase;
+    margin-bottom: .7em;
+}
+
+.sobre p {
+    width: 36em;
+    line-height: 1.5em;
+}
+
+.rodape {
+    background-color: var(--cor5);
+    color: var(--cor6);
+    font-size: .9em;
+    text-align: center;
+    letter-spacing: .3em;
+    padding: 1.5em;
+}
+
