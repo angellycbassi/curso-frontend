@@ -30,6 +30,7 @@ body {
     background-color: var(--cor1);
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: .4em;
 }
 
@@ -41,7 +42,6 @@ body {
 }
 
 .header-top-menu {
-    padding-top: .8em;
     margin-right: 1.5em;
     text-transform: uppercase;
     letter-spacing: .2em;
