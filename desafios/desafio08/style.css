@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --f1: 'Roboto';
+    --f1: 'Inter';
 
     --cor1: #2c2c2c;
     --cor2: #ffec42;
@@ -101,13 +101,13 @@ body {
     width: 66rem;
 }
 
-.cursos {
+#cursos {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.cursos h2 {
+#cursos h2 {
     font-size: 3.5rem;
     color: var(--cor1);
     margin: 6rem 0;
@@ -143,7 +143,7 @@ body {
     width: 31rem;
 }
 
-.cursos a {
+#cursos a {
     font-size: 1.6rem;
     text-decoration: none;
     color: black;
@@ -155,7 +155,7 @@ body {
     transition: outline 0s ease;
 }
 
-.cursos a:hover {
+#cursos a:hover {
     outline: 2px solid black;
 }
 
@@ -163,46 +163,47 @@ body {
     background-color: var(--cor3);
 }
 
-.nossa-escola {
+#nossa-escola {
     display: flex;
     justify-content: space-evenly;
     padding: 7rem 5rem 0;
     color: white;
 }
 
-.nossa-escola img {
+#nossa-escola img {
     width: 60rem;
     margin-left: 2rem;
 }
 
-.nossa-escola h2 {
+#nossa-escola h2 {
     font-size: 3.5rem;
     margin: 2rem 0 6rem;
 }
 
-.nossa-escola p {
+#nossa-escola p {
     font-size: 1.5rem;
+    line-height: 2rem;
     width: 44rem;
 }
 
-.contatos {
+#contatos {
     text-align: center;
 }
 
-.contatos h2 {
+#contatos h2 {
     font-size: 3.5rem;
     margin: 8rem 0 5rem;
     color: var(--cor1);
 }
 
-.contatos img {
+#contatos img {
     width: 130rem;
 }
 
-.contatos div {
+#contatos address {
     font-size: 1.1rem;
-    margin: 3rem 11rem 3rem 0;
     color: var(--cor1);
+    margin: 3rem 11rem 3rem 0;
     text-align: right;
 }
 
@@ -215,4 +216,9 @@ footer {
     text-align: center;
     padding: 3rem;
     text-shadow: 1px 1px 2px black;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
 }
