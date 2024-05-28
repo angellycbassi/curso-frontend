@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root {
-    --f1: 'Inter';
 
     --cor1: #2c2c2c;
     --cor2: #ffec42;
@@ -17,13 +16,7 @@
 }
 
 html {
-    font-size: 62.5%;
-}
-
-body {
-    font-family: var(--f1);
-    min-width: 144rem;
-    margin: auto;
+    font: 400 62.5% 'Inter', sans-serif;
 }
 
 .bg1 {
@@ -31,11 +24,12 @@ body {
 }
 
 .top {
+    max-width: 127.6rem;
+    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    margin: 0 15rem;
 }
 
 .logo {
@@ -43,9 +37,9 @@ body {
 }
 
 .top-menu ul {
-    list-style-type: none;
     display: flex;
     gap: 1rem;
+    list-style-type: none;
 }
 
 .top-menu a {
@@ -53,7 +47,7 @@ body {
     text-decoration: none;
     color: var(--cor2);
     padding: 1rem;
-    border: 1px solid var(--cor2);
+    border: 1px solid;
     transition: background-color 1s ease, font-size .3s ease-in-out;
     
 }
@@ -69,8 +63,10 @@ body {
 }
 
 .saiba-mais {
+    max-width: 127.6rem;
+    margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -80,6 +76,10 @@ body {
     color: var(--cor1);
     margin-bottom: 6rem;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.356);
+}
+
+.upper {
+    text-transform: uppercase;
 }
 
 .saiba-mais a {
@@ -102,6 +102,8 @@ body {
 }
 
 #cursos {
+    max-width: 127.6rem;
+    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -164,6 +166,8 @@ body {
 }
 
 #nossa-escola {
+    max-width: 127.6rem;
+    margin: auto;
     display: flex;
     justify-content: space-evenly;
     padding: 7rem 5rem 0;
@@ -172,7 +176,6 @@ body {
 
 #nossa-escola img {
     width: 60rem;
-    margin-left: 2rem;
 }
 
 #nossa-escola h2 {
@@ -187,6 +190,8 @@ body {
 }
 
 #contatos {
+    max-width: 127.6rem;
+    margin: auto;
     text-align: center;
 }
 
@@ -203,7 +208,7 @@ body {
 #contatos address {
     font-size: 1.1rem;
     color: var(--cor1);
-    margin: 3rem 11rem 3rem 0;
+    margin: 3rem -2rem 3rem 0;
     text-align: right;
 }
 
@@ -212,6 +217,8 @@ body {
 }
 
 footer {
+    max-width: 127.6rem;
+    margin: auto;
     color: white;
     text-align: center;
     padding: 3rem;
