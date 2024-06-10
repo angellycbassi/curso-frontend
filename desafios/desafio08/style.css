@@ -19,13 +19,16 @@ html {
     font: 400 62.5% 'Inter', sans-serif;
 }
 
+.container {
+    max-width: 127.6rem;
+    margin: auto;
+}
+
 .bg1 {
     background-color: var(--cor1);
 }
 
 .top {
-    max-width: 127.6rem;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -59,12 +62,10 @@ html {
 }
 
 .bg2 {
-    background-image: linear-gradient(to bottom, white, var(--cor2));
+    background-image: linear-gradient(transparent, var(--cor2));
 }
 
 .saiba-mais {
-    max-width: 127.6rem;
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -82,7 +83,7 @@ html {
     text-transform: uppercase;
 }
 
-.saiba-mais a {
+.btn {
     font-size: 1.7rem;
     text-decoration: none;
     color: black;
@@ -109,7 +110,7 @@ html {
     flex-direction: column;
 }
 
-#cursos h2 {
+.subtittle {
     font-size: 3.5rem;
     color: var(--cor1);
     margin: 6rem 0;
@@ -118,7 +119,6 @@ html {
 .cards-container {
     display: flex;
     gap: 4rem;
-
 }
 
 .cursos-card {
@@ -141,20 +141,13 @@ html {
 
 .cursos-card p {
     font-size: 1.4rem;
+    line-height: 2rem;
     color: #2c2c2ca5;
     width: 31rem;
 }
 
-#cursos a {
-    font-size: 1.6rem;
-    text-decoration: none;
-    color: black;
-    background-color: var(--cor4);
-    padding: 1.5rem 3rem;
-    border-radius: .7rem;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.227);
-    margin: 6rem 0 15rem;
-    transition: outline 0s ease;
+#cursos .btn {
+    margin: 7rem 0 10rem;
 }
 
 #cursos a:hover {
@@ -166,12 +159,10 @@ html {
 }
 
 #nossa-escola {
-    max-width: 127.6rem;
-    margin: auto;
     display: flex;
-    justify-content: space-evenly;
+    gap: 8rem;
     padding: 7rem 5rem 0;
-    color: white;
+    color: #d5d5d5;
 }
 
 #nossa-escola img {
@@ -195,12 +186,6 @@ html {
     text-align: center;
 }
 
-#contatos h2 {
-    font-size: 3.5rem;
-    margin: 8rem 0 5rem;
-    color: var(--cor1);
-}
-
 #contatos img {
     width: 130rem;
 }
@@ -217,8 +202,6 @@ html {
 }
 
 footer {
-    max-width: 127.6rem;
-    margin: auto;
     color: white;
     text-align: center;
     padding: 3rem;
