@@ -24,8 +24,15 @@ html {
     margin: auto;
 }
 
+.container-padded {
+    padding-top: 10rem;
+}
+
 .bg1 {
     background-color: var(--cor1);
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .top {
@@ -158,23 +165,23 @@ html {
     background-color: var(--cor3);
 }
 
-#nossa-escola {
+.nossa-escola{
     display: flex;
     gap: 8rem;
-    padding: 7rem 5rem 0;
+    padding: 5rem 5rem 0;
     color: #d5d5d5;
 }
 
-#nossa-escola img {
+.nossa-escola img {
     width: 60rem;
 }
 
-#nossa-escola h2 {
+.nossa-escola h2 {
     font-size: 3.5rem;
     margin: 2rem 0 6rem;
 }
 
-#nossa-escola p {
+.nossa-escola p {
     font-size: 1.5rem;
     line-height: 2rem;
     width: 44rem;
