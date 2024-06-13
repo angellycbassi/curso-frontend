@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body {
+            padding-bottom: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Área de interesse</legend>
+
+
+            <label>
+                <input type="checkbox" name="interesse" value="html">HTML
+            </label>
+
+            <label>
+                <input type="checkbox" name="interesse" value="css">CSS
+            </label>
+            
+            <label>
+                <input type="checkbox" name="interesse" value="JavaScript">JavaScript
+            </label>
+
+            <label>
+                <input type="checkbox" name="interesse" value="Python">Python
+            </label>
+
+            <label>
+                <input type="checkbox" name="interesse" value="Java">Java
+            </label>
+            <br><br><br>
+
+            <label>Escolha uma linguagem
+                <select name="linguagem" required>
+                    <option value="">Selecione uma</option>
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="JavaScript">Js</option>
+                    <option value="Python">Python</option>
+                    <option value="Java">Java</option>
+                </select>
+            </label>
+
+            </fieldset>
+
+        <input type="submit" value="mandar">
+    </form>
+</body>
+</html>
