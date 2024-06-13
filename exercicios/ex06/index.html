@@ -8,6 +8,10 @@
         body {
             padding-bottom: 100vh;
         }
+
+        textarea {
+            resize: none;
+        }
     </style>
 </head>
 <body>
@@ -38,19 +42,57 @@
             <br><br><br>
 
             <label>Escolha uma linguagem
-                <select name="linguagem" required>
-                    <option value="">Selecione uma</option>
-                    <option value="html">HTML</option>
-                    <option value="css">CSS</option>
-                    <option value="JavaScript">Js</option>
-                    <option value="Python">Python</option>
-                    <option value="Java">Java</option>
+                <select name="linguagem" required multiple size="8">
+
+                    <option value="" disabled>Selecione uma</option>
+
+                    <optgroup label="frontend">
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                        <option value="JavaScript">Js</option>
+                    </optgroup>
+
+                    <optgroup label="backend">
+                        <option value="Python">Python</option>
+                        <option value="Java">Java</option>
+                    </optgroup>
                 </select>
+
+                <input type="text" list="linguagemList">
+                <datalist id="linguagemList">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="Js">
+                    <option value="Python">
+                    <option value="PHP">
+                </datalist>
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend>Mensagem</legend>
+            <textarea name="msg" cols="30" rows="5" maxlength="10"></textarea>
+            <br><br>
+            <textarea cols="50" rows="8" readyonly>
+                CONTRATO DE UTILIZAÇÃO
+            </textarea>
+
+            <label>
+                <input type="checkbox" checked>Li e aceito um contrato
             </label>
 
-            </fieldset>
+            <input type="hidden" value="abcdef123">
 
+            <br><br><br>
+            <input type="file">
+        </fieldset>
+
+        <br><br><br>
         <input type="submit" value="mandar">
+
+        <button type="submit"><em>mandar</em></button>
+
+        <input type="range" min="0" max="10" step="2">
     </form>
 </body>
 </html>
