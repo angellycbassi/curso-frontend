@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Desafio 10</title>
+</head>
+<body>
+    <form action="#" method="post" autocomplete="off">
+        <fieldset>
+            <legend>Formulário de Contato</legend>
+
+            <label for="name">Seu nome</label>
+            <input type="text" name="name" id="name" 
+            required placeholder="Digite seu nome completo">
+
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required placeholder="Digite um email válido">
+
+            <label for="subject">Assunto</label>
+            <input type="text" name="subject" id="subject" required>
+
+            <label for="msg">Mensagem</label>
+            <textarea name="msg" id="msg" rows="5" maxlength="1000" minlength="20" required></textarea>
+            
+            <button type="submit" class="btn">Enviar
+        </fieldset>
+    </form>
+</body>
+</html>
