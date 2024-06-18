@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --cor: #3a68b7;
+
+    --font: 'Roboto';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-family: var(--font);
+}
+
+body {
+    background-color: var(--cor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    background-color: white;
+    color: var(--cor);
+    width: 35rem;
+    padding: 3rem;
+    box-shadow: -6px 0px 2px rgba(0, 0, 0, 0.299);
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: none;
+}
+
+legend {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+label, input, .btn, .register {
+    text-transform: uppercase;
+}
+
+label {
+    color: black;
+    margin-bottom: .5rem;
+}
+
+input {
+    height: 2.5rem;
+    padding: 0 0.5rem;
+    border: transparent;
+    border-bottom: 1px solid var(--cor);
+    margin-bottom: 2rem;
+}
+
+input:focus {
+    outline: 1px solid var(--cor);
+    border-radius: 2px;
+}
+
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.btn {
+    font-size: 1.2rem;
+    background-color: var(--cor);
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 1px black;
+    padding: .7rem 1rem;
+    border: none;
+    box-shadow: 0 0 2px black;
+    cursor: pointer;
+}
+
+.register {
+    flex-grow: 1;
+    font-size: 1.2rem;
+    color: var(--cor);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.possui {
+    color: black;
+    margin-left: 8rem;
+}
+
