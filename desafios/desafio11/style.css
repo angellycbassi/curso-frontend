@@ -26,7 +26,7 @@ body {
     height: 100vh;
 }
 
-form {
+.form {
     background-color: white;
     color: var(--cor);
     width: 35rem;
@@ -34,14 +34,14 @@ form {
     box-shadow: -6px 0px 2px rgba(0, 0, 0, 0.299);
 }
 
-fieldset {
+.form__fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: none;
 }
 
-legend {
+.form__tittle {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
