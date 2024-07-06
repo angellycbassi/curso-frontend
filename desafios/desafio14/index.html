@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <title>Pseudo-elementos</title>
+
+    <style>
+        input[type=checkbox] {
+            display: none;
+        }
+
+        label span {
+            display: inline-block;
+            width: 25px;
+            height: 25px;
+            background-color: red;
+        }
+
+        input[type=checkbox]:checked + label span, input[type=checkbox]:checked + span {
+            background-color: blue;
+        }
+
+        input[type=checkbox]:checked + label span::before, input[type=checkbox]:checked + span::before{
+            content: "\2713";
+            display: inline-block;
+            transform: translate(50%);
+            color: white;
+        }
+
+        input[type=checkbox]:checked + label span, input[type=checkbox]:checked + span {
+            transform: translateY(-7px);
+        }
+
+
+
+    </style>
+</head>
+
+<body>
+    <h1>Checkbox</h1>
+
+    <input type="checkbox" id="html">
+    <label for="html">
+        <span></span>
+        HTML
+    </label>
+
+    <input type="checkbox" id="css">
+    <label for="css">
+        <span></span>
+        CSS
+    </label>
+
+    <input type="checkbox" id="js">
+    <label for="js">
+        <span></span>
+        JavaScript
+    </label>
+
+    <hr>
+
+    <label>
+        <input type="checkbox"> <span></span> HTML
+    </label>
+
+    <label>
+        <input type="checkbox"> <span></span> CSS
+    </label>
+    
+    <label>
+        <input type="checkbox"> <span></span> JavaScript
+    </label>
+
+</body>
+
+</html>
