@@ -55,7 +55,7 @@ p {
 }
 
 .container-img:hover p {
-    transform: translateY(-3.3rem);
+    transform: translateY(-100%);
 }
 
 img {
