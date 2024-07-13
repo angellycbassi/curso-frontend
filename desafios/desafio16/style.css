@@ -94,7 +94,10 @@ body {
     font-size: 1.6rem;
     text-decoration: none;
     color: white;
+}
 
+.social a:hover {
+    color: rgb(235, 127, 25);
 }
 
 
