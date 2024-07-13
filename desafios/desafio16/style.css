@@ -35,9 +35,9 @@ body {
     margin-bottom: 2rem;
 }
 
-.header-content-menu {
-    list-style-type: none;
+.header-content-menu ul {
     font-size: 1.6rem;
+    list-style-type: none;
 }
 
 .header-content-menu li {
@@ -66,24 +66,6 @@ body {
     margin: 8rem 0 3rem;
 }
 
-.principal-content p:first-of-type, .principal-content p:nth-of-type(2), .principal-content p:last-of-type{
-    font-size: 1.8rem;
-    color: rgb(214, 118, 29);
-    font-weight: bold;
-    margin-bottom: .8rem;
-}
-
-.principal-content p:nth-of-type(2), .principal-content p:last-of-type {
-    font-size: 1.5rem;
-    margin-bottom: 1.5rem;
-}
-
-.principal-content p:nth-of-type(3) {
-    font-size: 1.4rem;
-    color: rgba(255, 255, 255, 0.71);
-    margin-bottom: 3rem;
-}
-
 .social {
     width: 30%;
     display: flex;
@@ -97,7 +79,11 @@ body {
 }
 
 .social a:hover {
-    color: rgb(235, 127, 25);
+    color: #eb7f19;
+}
+
+.social img {
+    width: 1rem;
 }
 
 
