@@ -37,7 +37,7 @@ body {
 }
 
 .perfil {
-    width: 8rem;
+    max-width: 10rem;
     margin-bottom: 2rem;
 }
 
@@ -65,32 +65,39 @@ body {
     padding-right: 1rem;
 }
 
+.principal, .header {
+    font-size: 1.6rem;
+}
+
 .principal {
     background-color: var(--cor_3);
     width: 83vw;
     opacity: .980;
-}
-
-.principal-content {
-    margin-left: 5rem;
+    padding: 5rem 10rem 5rem 6rem;
 }
 
 .principal-content h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     color: #d3d3d3a3;
-    margin: 7rem 0 5rem;
+    margin-bottom: 5rem;
 }
 
 .principal-content h2 {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     color: var(--cor_1);
     margin-bottom: 1rem;
 }
 
 .principal-content h3 {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
     color: var(--cor_1);
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
+}
+
+.principal-content h4 {
+    font-size: 1.6rem;
+    color: var(--cor_1);
+    margin-bottom: 1.8rem;
 }
 
 .principal-content p {
@@ -117,6 +124,13 @@ body {
 .social img {
     width: 3.5rem;
     margin-right: 1rem;
+}
+
+.principal-content cite {
+    color: white;
+    margin-bottom: 3rem;
+    font-style: normal;
+    
 }
 
 
