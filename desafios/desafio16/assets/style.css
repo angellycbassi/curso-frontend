@@ -100,9 +100,29 @@ body {
     margin-bottom: 1.8rem;
 }
 
-.principal-content p {
+.principal-content p{
     color: white;
     margin-bottom: 3rem;
+}
+
+.principal-content a {
+    color: white;
+}
+
+.principal-content q, .principal-content cite, .principal-content blockquote {
+    color: white;
+}
+
+.principal-content pre, .principal-content code {
+    color: white;
+}
+
+.principal-content article p {
+    margin-bottom: 5rem;
+}
+
+.underline {
+    text-decoration: red wavy underline;
 }
 
 .social {
@@ -124,13 +144,6 @@ body {
 .social img {
     width: 3.5rem;
     margin-right: 1rem;
-}
-
-.principal-content cite {
-    color: white;
-    margin-bottom: 3rem;
-    font-style: normal;
-    
 }
 
 

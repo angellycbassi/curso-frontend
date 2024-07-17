@@ -25,7 +25,7 @@
     </header>
     <main class="principal">
         <section class="principal-content">
-            <article>
+            <article class="highlight">
                 <h2>Tipografia</h2>
                 <p>A Tipografia transmite nossas definições de tamanhos e espaçamentos e deve ser utilizada respeitando a hierarquia dos elementos na interface</p>
             </article>
@@ -34,26 +34,64 @@
 
             <article>
                 <h4>Text</h4>
-                <p>Isso é um <b>negrito</b> e isso é um <strong>texto forte</strong>. Isso é em <i>italic</i> e isso é <em>enfatizar</em>. Isso é um texto <sup>sobreescrito</sup> e isso é um texto <sub>subreescrito</sub>. Isto é sublinhado e isso é um código: for (;;) {...}. Finalmente, isso é um <a href="#">link</a></p>
+                <p>Isso é um <b>negrito</b> e isso é um <strong>texto forte</strong>. Isso é em <i>italic</i> e isso é <em>enfatizar</em>. Isto é um texto escrito de forma <u class="underline">erada</u> e isso é um código: for (;;) {...}. Finalmente, isso é um <a href="#">link</a></p>
             </article>
 
             <article>
                 <h4>Citações</h4>
-                <p>De acordo com o site Mozilla, "Firefox 1.0 foi lançado em 2004 e se tornou um grande sucesso"</p>
 
-                <cite>Isto é um parágrafo de citação. Indica que o texto incluído é uma longa citação. Normalmente, este é o processado visualmente pelo recuo. Uma URL para a fonte da citação pode ser dada usando o atributo cite</cite>
+                <blockquote>
+                    O ruim não é ter trabalho. O ruim é ter que trabalhar
+                    <cite>Seu Madruga</cite>
+                </blockquote>
+
+                <blockquote cite="https...">
+                    O elemento HTML &lt;blockquote&gt; (ou elemento HTML de citação de bloco) que o texto inluído é uma longa citação.
+                    <cite>MDN</cite>
+                </blockquote>
+
+                <p>Segundo o Seu Madruga <q>A vingança nunca é plena, mata alma e envenena</q></p>
+
+                <p>
+                    De acordo com o site da Mozilla, <q cite="https...">Firefox foi lançado em 2004 e se tornou um grande sucesso</q>
+                </p>
+
+                <p>O filme <cite>Escola do Rock</cite> contém várias músicas antigas</p>
             </article>
 
             <article>
                 <h4>Abreviações</h4>
-                <p>Podemos usar <abbr title="Cascading Style Sheets">CSS</abbr> para estilizar nossos arquivos <abbr title="HyperText Markup Language">HTML</abbr>.</p>
+                <p>O <dfn><abbr title="HyperText Markup Language">HTML</abbr></dfn> é a principal linguagem da web onde podemos incluir nosso conteúdo de forma semântica. Já o <dfn><abbr title="Cascading Style Sheets">CSS</abbr></dfn>, é usado para estilizar elementos escritos em uma linguagem de marcação como HTML</p>
             </article>
 
             <article>
                 <h4>Sobrescrito e subscrito</h4>
                 <p>Ocasionalmente, você precisará usar o sobrescrito e subscrito ao marcar itens como datas, fórmulas químicas e equações matemáticas para que tenham o significado correto.</p>
+                <p>If x<sup>2</sup> is 9, x must equal 3 or -3</p>
                 <p>Caffeine's chemical formula is C<sub>8</sub>H<sub>10</sub>N<sub>4</sub>O<sub>2</sub></p>
-                <p>Utilize a tag </p>
+            </article>
+
+            <article>
+                <h4>"Coisas" de computador</h4>
+                <p>Use tags corretas para representar elementos como teclas, trechos de código, código de saída, etc</p>
+
+                <p>A propriedade <code>background</code> do CSS serve para colocar uma imagem de fundo</p>
+
+                <pre>
+Este texto é um
+                
+texto pré-formatado
+                </pre>
+
+                <pre>
+                    <code>
+.principal-content p{
+    color: white;
+    margin-bottom: 3rem;
+}
+                    </code>
+                </pre>
+
             </article>
         </section>
     </main>
