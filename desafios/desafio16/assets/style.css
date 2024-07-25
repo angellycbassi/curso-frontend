@@ -73,7 +73,7 @@ body {
     background-color: var(--cor_3);
     width: 83vw;
     opacity: .980;
-    padding: 5rem 10rem 5rem 6rem;
+    padding: 5rem 8rem 5rem 6rem;
 }
 
 .principal-content h1 {
@@ -100,7 +100,7 @@ body {
     margin-bottom: 1.8rem;
 }
 
-.principal-content p{
+.principal-content p {
     color: white;
     margin-bottom: 3rem;
 }
@@ -117,7 +117,7 @@ body {
     color: white;
 }
 
-.principal-content article p {
+.principal-content article p:not(.card-content p) {
     margin-bottom: 5rem;
 }
 
@@ -129,6 +129,36 @@ body {
 
 .underline {
     text-decoration: red wavy underline;
+}
+
+.row + h4 {
+    font-size: 2rem;
+     margin-bottom: 1.5rem;
+}
+
+.row {
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+
+.card {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.card img {
+    max-width: 100%;
+}
+
+.card-content {
+    background-color: var(--cor_2);
+    padding: 2rem 5rem 0 2rem;
+}
+
+.card-content h3 {
+    font-size: 2.5rem;
 }
 
 .social {
