@@ -4,6 +4,7 @@
     --cor_1: #ff7833;
     --cor_2: #353a45;
     --cor_3: #4e5262;
+    --cor_4: #2b2f37;
 }
 
 * :not(ul, ol){
@@ -207,48 +208,45 @@ body {
     list-style-type: "\1F642";
 }
 
-form label {
-    display: block;
-    color: white;
-    margin-bottom: .5rem;
-}
-
-form input {
+input, textarea, select{
     width: 100%;
-    height: 4rem;
+    padding: 1.2rem;
     background-color: #ccc;
     border: none;
     border-radius: 5px;
 }
 
-input::placeholder {
-    padding-left: 1rem;
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+}
+
+form label {
+    display: block;
+    color: white;
+    margin-bottom: .5rem;
+    padding-right: 1rem;
 }
 
 form .row {
     margin-bottom: 2rem;
 }
 
-textarea {
-    width: 100%;
-    background-color: #ccc;
-    border-radius: 5px;
-}
-
 .btn {
     margin-top: 2rem;
     background-color: var(--cor_2);
-    border: 3px solid #2b2f37;
+    border: 3px solid var(--cor_4);
     color: white;
-}
-
-.btn:hover {
     cursor: pointer;
 }
 
+.btn:hover, btn:focus {
+    background-color: var(--cor_4);
+}
+
 .btn:active {
-    background-color: white;
-    color: var(--cor_2);
+    background-color: var(--cor_3);
+    color: var(--cor_4);
+    font-weight: bolder;
 }
 
 
