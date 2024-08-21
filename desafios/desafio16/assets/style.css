@@ -5,6 +5,8 @@
     --cor_2: #353a45;
     --cor_3: #4e5262;
     --cor_4: #2b2f37;
+
+    --default-gap: 3rem;
 }
 
 * :not(ul, ol){
@@ -134,7 +136,7 @@ body {
 
 .row {
     display: flex;
-    gap: 3rem;
+    gap: var(--default-gap);
     margin-bottom: 5rem;
     justify-content: space-between;
 }
@@ -218,6 +220,7 @@ input, textarea, select{
 
 input[type="radio"], input[type="checkbox"] {
     width: auto;
+    margin-top: 1.5rem;
 }
 
 form label {
@@ -229,6 +232,11 @@ form label {
 
 form .row {
     margin-bottom: 2rem;
+}
+
+.form-quiz {
+    /* width: calc(50% - 1.5rem); */
+    width: calc(50% - var(--default-gap)/2);
 }
 
 .btn {
@@ -248,6 +256,7 @@ form .row {
     color: var(--cor_4);
     font-weight: bolder;
 }
+
 
 
 
