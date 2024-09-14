@@ -245,6 +245,8 @@ form .row {
     border: 3px solid var(--cor_4);
     color: white;
     cursor: pointer;
+    padding: .8em 1.2em;
+    border-radius: 5px;
 }
 
 .btn:hover, btn:focus {
@@ -256,6 +258,63 @@ form .row {
     color: var(--cor_4);
     font-weight: bolder;
 }
+
+.btn + .btn:not(.btn-full) {
+    margin-left: 2rem;
+}
+
+.btn-stroke {
+    background-color: transparent;
+}
+
+.btn-big {
+    font-size: 1.6rem;
+}
+
+.btn-full {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    color: white;
+    margin-bottom: 8rem;
+}
+
+th {
+    text-transform: uppercase;
+}
+
+td, th {
+    border-bottom: 2px solid var(--cor_4);
+    padding: 1.5rem;
+    text-align: left;
+}
+
+tr td:last-child, tr th:last-child {
+    text-align: right;
+}
+
+.zebrada tr:nth-child(2n+1):not(thead > tr) {
+    background-color: var(--cor_2);
+}
+
+.zebrada td, th {
+    border: none;
+}
+
+.vertical td:not(:last-child), .vertical th:not(:last-child) {
+    border-right: 2px solid var(--cor_4);
+}
+
+
+
+
+
+
 
 
 
