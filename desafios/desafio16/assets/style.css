@@ -277,36 +277,37 @@ form .row {
     width: 100%;
 }
 
-table {
+.table {
     width: 100%;
     border-collapse: collapse;
     color: white;
     margin-bottom: 8rem;
 }
 
-th {
+.table th {
     text-transform: uppercase;
-}
-
-td, th {
-    border-bottom: 2px solid var(--cor_4);
-    padding: 1.5rem;
     text-align: left;
 }
 
-tr td:last-child, tr th:last-child {
+.table td, .table th {
+    border-bottom: 2px solid var(--cor_4);
+    padding: 1.5rem;
+
+}
+
+.table tr td:last-child, .table tr th:last-child {
     text-align: right;
 }
 
-.zebrada tr:nth-child(2n+1):not(thead > tr) {
+.table-alternate tr:nth-child(odd) td{
     background-color: var(--cor_2);
 }
 
-.zebrada td, th {
+.table-alternate td, .table-alternate th{
     border: none;
 }
 
-.vertical td:not(:last-child), .vertical th:not(:last-child) {
+.table-verticalLines td:not(:last-child), .table-verticalLines th:not(:last-child) {
     border-right: 2px solid var(--cor_4);
 }
 
