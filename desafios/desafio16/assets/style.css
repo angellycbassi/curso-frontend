@@ -24,19 +24,24 @@ body {
     min-height: 100vh;
     width: 100vw;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    background-image: url(imagens/fulls/03.jpg);
+    background: url(../imagens/bg-unsplash.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 .header {
-    background-color: var(--cor_2);
+    background-color: rgba(53, 58, 69, .8);
     width: 17vw;
-    padding: 5rem 2rem;
+    padding: 0 2rem 5rem;
 }
 
 .header-content {
     text-align: right;
+    padding-top: 5rem;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .perfil {
@@ -73,7 +78,7 @@ body {
 }
 
 .principal {
-    background-color: var(--cor_3);
+    background-color: rgba(78, 82, 98, .6);
     width: 83vw;
     opacity: .980;
     padding: 5rem 8rem 5rem 6rem;
@@ -177,24 +182,31 @@ body {
 }
 
 .social {
-    width: 40vw;
+    width: 80%;
+    display: flex;
 }
 
 .social a {
+    display: flex;
+    align-items: center;
     font-size: 1.4rem;
     text-decoration: none;
     font-style: normal;
     color: white;
-    margin: 0 1rem;
+    margin: 0 2rem;
 }
 
 .social a:hover {
     color: var(--cor_1);
 }
 
+.social a:active {
+    color: white;
+}
+
 .social img {
     width: 3.5rem;
-    margin-right: 1rem;
+    margin-right: .8rem;
 }
 
 .alternate {
@@ -247,6 +259,7 @@ form .row {
     cursor: pointer;
     padding: .8em 1.2em;
     border-radius: 5px;
+    font-weight: bold;
 }
 
 .btn:hover, btn:focus {
@@ -256,7 +269,6 @@ form .row {
 .btn:active {
     background-color: var(--cor_3);
     color: var(--cor_4);
-    font-weight: bolder;
 }
 
 .btn + .btn:not(.btn-full) {
